@@ -10,3 +10,4 @@ spring:
       server:
         git:
           uri:
+

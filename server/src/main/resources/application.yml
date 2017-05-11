@@ -9,7 +9,9 @@ spring:
       consul:
         host: localhost
         port: 8500
-#eureka注册中西
+
+
+#eureka注册中心
 #eureka:
 #  client:
 #    serviceUrl:
