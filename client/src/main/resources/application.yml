@@ -5,7 +5,14 @@ spring:
   application:
     name: consumer
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8081/eureka/
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        register: false
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8081/eureka/
