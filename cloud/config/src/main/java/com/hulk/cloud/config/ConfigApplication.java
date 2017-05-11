@@ -1,4 +1,4 @@
-package com.hulk.config;
+package com.hulk.cloud.config;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
