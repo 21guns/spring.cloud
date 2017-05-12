@@ -1,5 +1,5 @@
 server:
-  port: 1001
+  port: 4543
 
 spring:
   application:
@@ -9,5 +9,5 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/21guns/spring.cloud.config
 

@@ -1,5 +1,11 @@
 spring:
+  application:
+    name: test-service
   cloud:
+    config:
+      profile: development
+      label: master
+      uri: http://localhost:4543
     consul:
       config:
         enabled: true
