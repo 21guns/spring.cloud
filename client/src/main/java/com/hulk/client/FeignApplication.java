@@ -7,6 +7,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
+//feign包含熔断
 @EnableFeignClients
 public class FeignApplication {
     public static void main(String[] args) {

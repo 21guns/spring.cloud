@@ -11,6 +11,10 @@ spring:
       port: 8500
       discovery:
         register: false
+#http://stackoverflow.com/questions/43088585/spring-cloud-feign-hystrix-fallback-not-work
+feign:
+  hystrix:
+    enabled: true
 
 #eureka:
 #  client:
