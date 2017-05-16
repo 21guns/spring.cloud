@@ -1,9 +1,9 @@
 server:
-  port: 2222
+  port: 4444
 
 spring:
   application:
-    name: consumer
+    name: hystrix.dashboard
 
   cloud:
     consul:
@@ -11,7 +11,7 @@ spring:
       port: 8500
       discovery:
         register: false
-    # stream kafka
+
 #    stream:
 #      kafka:
 #        binder:
@@ -24,11 +24,12 @@ spring:
 #          replicationFactor: 1
 #
 #        bindings:
-#          input:
-#            consumer:
-#              autoCommitOffset: true
-#              startOffset: earliest
-#              headerMode: raw
+#          output:
+#            producer:
+#              bufferSize: 16384
+#              sync: true
+#              batchTimeout: 0
+
   rabbitmq:
     host: 127.0.0.1
     port: 5672
@@ -36,10 +37,11 @@ spring:
     password: guest
     virtualHost: /
 
-#http://stackoverflow.com/questions/43088585/spring-cloud-feign-hystrix-fallback-not-work
-feign:
-  hystrix:
-    enabled: true
+turbine:
+
+  stream:
+    port: 8989
+
 
 #eureka:
 #  client:
